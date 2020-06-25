@@ -75,7 +75,6 @@ class WebAwareThemePlugin extends MantisPlugin  {
 	 */
 	function resources() {
 		$t_font_family = config_get('font_family', null, null, ALL_PROJECTS);
-		echo "\n\n<!-- $t_font_family -->\n\n";
 
 		if (isset($this->fonts[$t_font_family])) {
 			$spec	= $this->fonts[$t_font_family];
