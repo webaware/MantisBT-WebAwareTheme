@@ -80,7 +80,7 @@ class WebAwareThemePlugin extends MantisPlugin  {
 			$spec	= $this->fonts[$t_font_family];
 			$url	= "https://fonts.googleapis.com/css2?family={$spec}&display=swap";
 
-			printf('<link rel="stylesheet" type="text/css" href="%s" crossorigin="anonymous" />', $url);
+			printf('<link rel="stylesheet" type="text/css" href="%s" crossorigin="anonymous" />', htmlspecialchars($url));
 		}
 	}
 
